@@ -141,7 +141,9 @@ function populateEpisodes(episodes: EpisodeInterface[]): void {
   $episodesArea.show();
  }
 
-/**  */
+/** Click handler for getEpisodes button; grabs show ID, retrieves and displays
+ *  episodes
+ */
 
  async function getAndDisplayEpisodes(evt: JQuery.ClickEvent) : Promise<void> {
   const showId = Number(evt.target().closest(".Show").attr("data-show-id"));
